@@ -4,17 +4,20 @@
  * and open the template in the editor.
  */
 
-
 /**
  *
  * @author liang
- */public class JavaApplication {
+ */
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+
+public class PlusWorker extends Worker {
+
+
+	public Object handle(Object input) {
+		
+		Integer i =(Integer)input;
+		return i*i*i;
+	}
+
+	
 }
